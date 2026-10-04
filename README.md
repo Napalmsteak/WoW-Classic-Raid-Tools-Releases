@@ -44,6 +44,8 @@ Supports **Classic Era**, **Season of Discovery**, **Forever** (beta), **TBC**, 
   prices and filters by quality, slot, type, level, binding and class.
 - **Alliance or Horde:** a dark theme in your faction's colors and artwork.
 - **Your language:** see [Languages](#languages).
+- **In game:** the [WCRT addon](#in-game-addon-wcrt) brings your rosters, BiS lists and loot into the
+  game, and records your guild, gear, loot and attendance for the app.
 
 ### Import and export
 
@@ -52,9 +54,39 @@ Supports **Classic Era**, **Season of Discovery**, **Forever** (beta), **TBC**, 
 | Guild roster and characters | Blizzard (by realm and guild name) | — |
 | Rosters | A roster file from the app, or a CSV (Name, Class, Role, Server, Notes) | A roster file to share with other officers |
 | BiS lists | That's My BiS (its CSV export) | — |
+| Guild, gear, calendar, loot and attendance | The [WCRT addon](#in-game-addon-wcrt) (`/wcrt export`, or its saved file) | — |
+| Rosters, BiS lists, loot and stat weights | — | The WCRT addon (**Guild ▸ Send to Addon**, then `/wcrt import` in game) |
 | Everything | A backup file | A backup file of your guilds, rosters, BiS lists and loot log |
 
 Restoring a backup first saves a copy of your current data, in case you need it back.
+
+## In-game addon (WCRT)
+
+**WCRT** is the app's companion addon, for the same game versions. Get it from
+[CurseForge](https://www.curseforge.com/wow/addons/wow-classic-raid-tools-wcrt) or
+[Wago](https://addons.wago.io/addons/wow-classic-raid-tools-wcrt) (with their apps, it updates itself),
+or download the zip from the [addon releases](../../releases?q=addon) and unzip it into your
+`Interface\AddOns` folder.
+
+`/wcrt` opens a window laid out like the app, in your faction's colors:
+
+- **Guild, Seen and Schedule:** your roster with notes, the gear of guild members you mouse over or
+  inspect, and the in-game calendar with sign-ups.
+- **Roster:** invite a roster from the app and sort the raid into its groups.
+- **BiS Lists:** who still needs what; item tooltips show **BiS for:** and everyone's **+1s**.
+- **Upgrades:** better gear for anyone with recorded gear, scored like the app (stat weights, caps,
+  Pawn strings), compared with what they wear.
+- **Loot and Attendance:** the loot handed out in raids and who was there at each boss kill,
+  recorded as you play.
+- **Item Database:** every item of your game version, with sources, bosses, sell prices and the
+  app's filters.
+
+To bring what it recorded into the app, use **Guilds ▸ Import From Addon** and pick its saved file
+(`WTF\Account\<account>\SavedVariables\WCRT.lua`, written when you log out or `/reload`), or paste
+what `/wcrt export` shows. The app's **Send to Addon** goes the other way.
+
+Self-hosted servers on the original 1.12 client have their own version: `WCRT-Vanilla-<version>.zip`
+on the addon releases.
 
 ## Screenshots
 
@@ -95,7 +127,7 @@ English are drafts: if something reads wrong in your language, please [open an i
 ## Install
 
 1. Open the [latest release](../../releases/latest).
-2. Download `WoW.Classic.Raid.Tool_<version>_x64-setup.exe` and run it. It installs for your
+2. Download `WoW.Classic.Raid.Tools_<version>_x64-setup.exe` and run it. It installs for your
    Windows user only, so no administrator rights are needed.
 
 Windows may show a SmartScreen warning because the installer isn't code-signed. Choose
