@@ -27,17 +27,23 @@ Supports **Classic Era**, **Season of Discovery**, **Forever** (beta), **TBC**, 
   or archive it, and look back at its change history. Link it to the raids it runs.
 - **Schedule:** one-off, multi-day or weekly raid nights, optionally tied to a roster. The
   Dashboard shows the next raid and what is coming up.
-- **BiS Lists:** import your guild's lists from That's My BiS (wishlists, priorities and loot
-  received; alts and off-spec optional). Track everyone's progress and compare each item with
-  what they have equipped in that slot.
+- **BiS Lists:** import your guild's lists from That's My BiS: its CSV, or its characters export,
+  which brings everyone's role too (wishlists and priorities, with loot received marked obtained;
+  alts and off-spec optional). No setup needed first: the import can create the guild, add the
+  characters it's missing and make a roster for each TMB raid group. Track everyone's progress and
+  compare each item with what they have equipped in that slot.
 - **Upgrades:** pick any guild member with recorded gear and see, slot by slot, every item that
   would be better for their spec: from raids, dungeons, crafting, vendors, reputation, PvP and
   more, filtered by phase, quality and level. Items are scored with stat weights for each spec in
   each game version (change them, or paste a Pawn string), hit, expertise and a tank's defense
   count only up to their caps, and items on the member's BiS list are marked. It also points out
-  missing enchants and empty sockets. Open it from the page, or from a character sheet.
+  missing enchants and empty sockets. Hover an upgrade to see it beside the item it would replace.
+  Open it from the page, or from a character sheet.
 - **Loot Tracker:** log who got what from which boss, roster by roster, with a +1 system and a
-  reset. The boss and item pickers come from the raids the roster runs.
+  reset. The boss and item pickers come from the raids the roster runs. **Export for TMB** sends
+  the log to That's My BiS's loot import.
+- **Attendance:** who was in the raid at each boss kill and everyone's share of the raid nights,
+  recorded in game by the [WCRT addon](#in-game-addon-wcrt).
 - **Item Database:** 72,000+ items with full tooltips and icons, searchable by name, raid, boss or
   source: dungeons, raids, crafting, vendors, reputation, PvP and more. It includes leveling gear
   at every level and every profession's recipes with the materials they need, plus vendor sell
@@ -53,7 +59,8 @@ Supports **Classic Era**, **Season of Discovery**, **Forever** (beta), **TBC**, 
 |---|---|---|
 | Guild roster and characters | Blizzard (by realm and guild name) | — |
 | Rosters | A roster file from the app, or a CSV (Name, Class, Role, Server, Notes) | A roster file to share with other officers |
-| BiS lists | That's My BiS (its CSV export) | — |
+| BiS lists, and the guild and rosters if you don't have them | That's My BiS (its CSV, or its characters export) | — |
+| Loot log | — | That's My BiS's loot import (**Export for TMB**) |
 | Guild, gear, calendar, loot and attendance | The [WCRT addon](#in-game-addon-wcrt) (`/wcrt export`, or its saved file) | — |
 | Rosters, BiS lists, loot and stat weights | — | The WCRT addon (**Guild ▸ Send to Addon**, then `/wcrt import` in game) |
 | Everything | A backup file | A backup file of your guilds, rosters, BiS lists and loot log |
@@ -78,6 +85,8 @@ or download the zip from the [addon releases](../../releases?q=addon) and unzip 
   Pawn strings), compared with what they wear.
 - **Loot and Attendance:** the loot handed out in raids and who was there at each boss kill,
   recorded as you play.
+- **That's My BiS:** paste a TMB export into `/wcrt import` for rosters and BiS lists, and send the
+  loot recorded in raids to TMB with `/wcrt export tmb`.
 - **Item Database:** every item of your game version, with sources, bosses, sell prices and the
   app's filters.
 
